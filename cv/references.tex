@@ -1,0 +1,51 @@
+
+\cvsection{References}
+
+\newcommand{\cvdoublecolumn}[2]{%
+	\begin{minipage}[t]{{.45\linewidth}}#1\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{{.45\linewidth}}#2\end{minipage}%
+}
+
+\newcommand{\cvreference}[7]{%
+	\entrytitlestyle{#1}\newline% Name
+	\ifthenelse{\equal{#2}{}}{}{#2\newline}%
+	\ifthenelse{\equal{#3}{}}{}{#3\newline}%
+	\ifthenelse{\equal{#4}{}}{}{#4\newline}%
+	\ifthenelse{\equal{#5}{}}{}{\faHome\acvHeaderIconSep~#5\newline}%
+	\ifthenelse{\equal{#6}{}}{}{\href{mailto:#6}{\faEnvelope\acvHeaderIconSep~#6\newline}}%
+	\ifthenelse{\equal{#7}{}}{}{\faMobile\acvHeaderIconSep~#7\newline}}
+
+\cvdoublecolumn{\cvreference{Dr.Samaneh Hosseini Semnani}
+    	{Department of Electrical & Computer Engineering}
+    	{Isfahan University of Technology}
+    	{Assistant Professor}
+    	{}
+    	{samane.hossayni@gmail.com}
+    	{}%
+    }
+    {\cvreference{Dr.Nader Karimi}
+    	{Department of Electrical & Computer Engineering}
+    	{Isfahan University of Technology}
+    	{Associate Professor}
+    	{}
+    	{nader.karimi@iut.ac.ir}
+    	{}%
+    } 
+\cvdoublecolumn{\cvreference
+    {Dr.Ehsan Yazdian}
+    	{Department of Electrical & Computer Engineering}
+    	{Isfahan University of Technology}
+    	{Assistant Professor}
+    	{}
+    	{yazdian@cc.iut.ac.ir}
+    	{}%
+    }
+    {\cvreference{Dr.Mohammad Sadegh Golsorkhi}
+        {Department of Electrical & Computer Engineering}
+    	{Isfahan University of Technology}
+    	{Assistant Professor}
+    	{}
+    	{golsorkhi@cc.iut.ac.ir}
+    	{}%
+    }
